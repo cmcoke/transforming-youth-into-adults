@@ -1,0 +1,102 @@
+.header {
+  /* position: relative; */
+  margin-top: 8px;
+
+
+  /* logo */
+  &__logo {
+    z-index: 10;
+
+    & img {
+      max-width: 6rem;
+    }
+
+  }
+
+
+  /* mobile menu icon */
+  &__menu-icon {
+    position: absolute;
+    width: 20px;
+    height: 19px;
+    z-index: 10;
+    top: 60px;
+    right: 11px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 30px;
+      height: 3px;
+      background-color: #828282;
+      transform-origin: 0 0;
+      transition: transform .3s ease-out;
+    }
+
+    &__middle {
+      position: absolute;
+      top: 8px;
+      left: 0;
+      width: 30px;
+      height: 3px;
+      background-color: #828282;
+      transition: all .3s ease-out;
+      transform-origin: 0 50%;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      top: 16px;
+      width: 30px;
+      height: 3px;
+      background-color: #828282;
+      transform-origin: 0 100%;
+      transition: transform .3s ease-out;
+    }
+
+  }
+
+  /* creates the close icon (x) when the mobile menu is touched by the user. */
+  &__menu-icon--close-x {
+    &::before {
+      transform: rotate(45deg) scaleX(1.25) translateY(-7px);
+    }
+
+    .header__menu-icon__middle {
+      opacity: 0;
+      transform: scaleX(0);
+    }
+
+    &::after {
+      transform: rotate(-45deg) scaleX(1.25) translateY(6px);
+    }
+
+  }
+
+  /* creates an overlay effect on mobile screens when the mobile menu is touched by the user. */
+  &__overlay {
+
+    @mixin atBelowMedium {
+      visibility: hidden;
+      opacity: 0;
+      transition: all 200ms ease-in-out;
+    }
+
+  }
+
+  &__overlay--open {
+
+    @mixin atBelowMedium {
+      visibility: visible;
+      opacity: 1;
+    }
+
+  }
+
+
+}

@@ -1,0 +1,42 @@
+.main-nav {
+
+
+  /* the below code pertains to the menu navigation in the header section of the website. */
+  &__list {
+
+    @mixin atMedium {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    @mixin atXLarge {
+      justify-content: space-evenly;
+    }
+
+  }
+
+
+  &__item {
+
+    @mixin atBelowMedium {
+      padding: 1.3rem 0;
+    }
+
+  }
+
+
+  &__link {
+    font-family: 'BeVietnam-Regular';
+    font-size: responsive(15px, 17px);
+    font-weight: 800;
+    color: $black;
+    transition: color .3s ease-out;
+
+    &:hover {
+      color: $green;
+    }
+
+  }
+
+}

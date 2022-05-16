@@ -1,0 +1,41 @@
+/* 576px = 36em */
+@define-mixin atXSmall {
+  @media (min-width: 36em) {
+    @mixin-content;
+  }
+}
+
+/* 768px = 48em*/
+@define-mixin atSmall {
+  @media (min-width: 48em) {
+    @mixin-content;
+  }
+}
+
+/* 992px = 62em*/
+@define-mixin atMedium {
+  @media (min-width: 62em) {
+    @mixin-content;
+  }
+}
+
+/* 1200px = 75em */
+@define-mixin atLarge {
+  @media (min-width: 75em) {
+    @mixin-content;
+  }
+}
+
+/* 1600px = 100em */
+@define-mixin atXLarge {
+  @media (min-width: 100em) {
+    @mixin-content;
+  }
+}
+
+/* 991px = 62em */
+@define-mixin atBelowMedium {
+  @media (max-width: 61.9375em) {
+    @mixin-content;
+  }
+}

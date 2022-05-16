@@ -1,0 +1,31 @@
+.btn {
+  font-family: 'BeVietnam-Regular';
+  font-size: 16px;
+  font-weight: 800;
+  color: #fff;
+  background-color: $green;
+  padding: 9px 27px 10px 26px;
+  border: 1px solid $green;
+  border-radius: 24px;
+  transition: all .3s ease-out;
+
+  &:hover {
+    color: $green;
+    background-color: #fff;
+  }
+
+
+  /* makes the 'DONATE' link in the header similar to the other navigation links on mobile screens. */
+  &--header {
+
+    @mixin atBelowMedium {
+      font-size: 15px;
+      color: $black;
+      padding: 0;
+      border: none;
+      background-color: transparent;
+    }
+
+  }
+
+}
