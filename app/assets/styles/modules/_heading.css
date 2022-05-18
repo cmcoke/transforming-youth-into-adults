@@ -94,4 +94,9 @@
   }
 
 
+  /* center a heading */
+  &--center {
+    text-align: center;
+  }
+
 }
