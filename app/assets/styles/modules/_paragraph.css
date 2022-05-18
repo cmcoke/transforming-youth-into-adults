@@ -12,4 +12,23 @@
     margin-bottom: 3.125rem;
   }
 
+  &--medium {
+    font-size: 16px;
+    line-height: 30px;
+
+    @mixin atSmall {
+      font-size: 18px;
+      line-height: 30px;
+    }
+
+    @mixin atMedium {
+      font-size: 21px;
+      line-height: 33px;
+    }
+  }
+
+  &--white {
+    color: #fff;
+  }
+
 }

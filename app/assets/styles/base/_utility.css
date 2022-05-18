@@ -1,0 +1,25 @@
+/* add a margin top to an image */
+.image-mt {
+
+  @mixin atMedium {
+    margin-top: 7.5rem;
+  }
+
+  @mixin atXLarge {
+    margin-top: 9rem;
+  }
+
+}
+
+
+.image-mtx {
+
+  @mixin atMedium {
+    margin-top: 6rem;
+  }
+
+  @mixin atXLarge {
+    margin-top: 7rem;
+  }
+
+}

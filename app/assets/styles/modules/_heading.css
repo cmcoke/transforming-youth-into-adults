@@ -13,4 +13,70 @@
     }
   }
 
+  h4& {
+    font-family: 'BeVietnam-Medium';
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: capitalize;
+
+    @mixin atSmall {
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+    @mixin atMedium {
+      font-size: 22px;
+      line-height: 28px;
+    }
+
+    @mixin atXLarge {
+      font-size: 25px;
+      max-width: 500px;
+    }
+  }
+
+  &--white {
+    color: #fff;
+  }
+
+  /* refers to the third section of the home page wich contains headings with icons beside them. */
+  &__with-icon {
+    display: flex;
+    align-items: center;
+    gap: 0 .6rem;
+    margin-bottom: 10px;
+
+    @mixin atSmall {
+      gap: 0 1rem;
+    }
+
+  }
+
+  /* creates an orange line under the icon. */
+  &__icon {
+    position: relative;
+  }
+
+  &__icon::after {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 100%;
+    height: 6px;
+    bottom: -28.11%;
+    left: 0;
+    background: $orange;
+  }
+
+
+  /* makes icon image move upwards when hovering over it */
+  &__icon img {
+    transition: 0.6s;
+
+    &:hover {
+      transform: translate(0, -13px);
+    }
+  }
+
+
 }
