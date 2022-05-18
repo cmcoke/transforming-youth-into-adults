@@ -54,4 +54,19 @@
 
   }
 
+
+  /* social media icons */
+  &__social-media {
+    display: none;
+
+    @mixin atMedium {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__social-media li {
+    margin-right: 10px;
+  }
+
 }
