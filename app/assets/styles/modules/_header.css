@@ -1,11 +1,29 @@
 .header {
-  /* position: relative; */
-  margin-top: 8px;
+  position: absolute;
+  background-color: #fff;
+  height: 120px;
+  width: 100%;
+  padding: 10px 0;
+  z-index: 5;
+
+  @mixin atMedium {
+    height: 135px;
+  }
+
+  /* css grid used to layout the header content */
+  &__grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
 
 
-  /* logo */
+  /* T.Y.I.A. logo */
   &__logo {
-    z-index: 10;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    z-index: 5;
 
     & img {
       max-width: 6rem;
@@ -13,15 +31,16 @@
 
   }
 
-
   /* mobile menu icon */
   &__menu-icon {
+    grid-column: 2/3;
+    grid-row: 1/2;
     position: absolute;
     width: 20px;
     height: 19px;
-    z-index: 10;
-    top: 60px;
+    top: 45px;
     right: 11px;
+    z-index: 5;
 
     &::before {
       content: "";
@@ -77,26 +96,5 @@
     }
 
   }
-
-  /* creates an overlay effect on mobile screens when the mobile menu is touched by the user. */
-  &__overlay {
-
-    @mixin atBelowMedium {
-      visibility: hidden;
-      opacity: 0;
-      transition: all 200ms ease-in-out;
-    }
-
-  }
-
-  &__overlay--open {
-
-    @mixin atBelowMedium {
-      visibility: visible;
-      opacity: 1;
-    }
-
-  }
-
 
 }

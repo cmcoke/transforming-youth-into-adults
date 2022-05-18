@@ -4,7 +4,7 @@
   font-weight: 800;
   color: #fff;
   background-color: $green;
-  padding: 9px 27px 10px 26px;
+  padding: 12px 27px;
   border: 1px solid $green;
   border-radius: 24px;
   transition: all .3s ease-out;
@@ -12,18 +12,39 @@
   &:hover {
     color: $green;
     background-color: #fff;
+    border: 1px solid $green;
   }
 
 
   /* makes the 'DONATE' link in the header similar to the other navigation links on mobile screens. */
   &--header {
+    font-size: 15px;
 
     @mixin atBelowMedium {
-      font-size: 15px;
       color: $black;
       padding: 0;
-      border: none;
+      border: 0;
       background-color: transparent;
+
+      &:hover {
+        border: none;
+        border-radius: 0;
+        background-color: transparent;
+      }
+    }
+
+  }
+
+
+  /* refers to the 'DONATE TODAY' button on the homepage hero section */
+  &--large {
+    font-family: 'BeVietnam-Medium';
+    font-size: responsive(16px, 33px);
+    font-weight: bold;
+    border-radius: 9rem;
+
+    @mixin atSmall {
+      padding: 1.25rem 3.3375rem;
     }
 
   }

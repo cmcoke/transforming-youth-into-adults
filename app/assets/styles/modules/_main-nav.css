@@ -1,34 +1,66 @@
 .main-nav {
+  grid-column: 1/-1;
+  grid-row: 2/3;
+  margin-top: 1.4rem;
+
+  /* 
+    removes the main-nav so that it does not appear on mobile screens on page load. 
+    When the user clicks the mobile menu icon display: none will change to display: block
+    as it was created in the MobileMenu.js file.
+  */
+  @mixin atBelowMedium {
+    display: none;
+  }
+
+  @mixin atSmall {
+    margin-top: 3rem;
+  }
+
+  @mixin atMedium {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
 
 
-  /* the below code pertains to the menu navigation in the header section of the website. */
+  /* contains the individual list items & navigation links  */
   &__list {
 
     @mixin atMedium {
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: flex-end;
+    }
+
+  }
+
+
+  /* individual list items */
+  &__item {
+    margin-bottom: 1.5rem;
+
+    @mixin atSmall {
+      margin-bottom: 3rem;
+    }
+
+    @mixin atMedium {
+      margin-left: 17px;
+    }
+
+    @mixin atLarge {
+      margin-left: 30px;
     }
 
     @mixin atXLarge {
-      justify-content: space-evenly;
+      margin-left: 50px;
     }
 
   }
 
 
-  &__item {
-
-    @mixin atBelowMedium {
-      padding: 1.3rem 0;
-    }
-
-  }
-
-
+  /* individual navigation links */
   &__link {
     font-family: 'BeVietnam-Regular';
-    font-size: responsive(15px, 17px);
+    font-size: 15px;
     font-weight: 800;
     color: $black;
     transition: color .3s ease-out;
@@ -38,5 +70,6 @@
     }
 
   }
+
 
 }

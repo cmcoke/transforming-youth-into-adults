@@ -1,0 +1,133 @@
+.hero {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+
+  /* hero images */
+  &__image {
+    grid-column: 1/-1;
+    grid-row: 1;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+  }
+
+
+  /* homepage hero image */
+  &__image-home {
+    background-image: url('./assets/images/hero--hompage.png');
+
+    @mixin atXLarge {
+      min-height: calc(100vh - 60px);
+    }
+
+  }
+
+
+  /* places the text content on the home page hero image */
+  &__text-content {
+    grid-column: 1/-1;
+    grid-row: 1;
+    align-self: center;
+    color: #fff;
+    margin: 7.5rem 0 2rem 0;
+    z-index: 1;
+
+    @mixin atXLarge {
+      margin: 7.5rem 0 2rem 3rem;
+    }
+
+  }
+
+
+  /* the heading 'TRANSFORMING YOUTHS INTO ADULTS' on the homepage  */
+  &__small-title {
+    position: relative;
+    font-size: resposive(12px, 24px);
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    line-height: 23px;
+  }
+
+
+  /* creates the green line under the hero small title */
+  &__small-title:after {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 22%;
+    height: 12%;
+    left: 0;
+    top: 120%;
+    background-color: $green;
+
+    @media (min-width: 448px) {
+      top: 120%
+    }
+
+    @media (min-width: 480px) {
+      top: 150%;
+      height: 15%;
+      width: 17%;
+    }
+
+    @mixin atSmall {
+      width: 13%;
+      height: 15%;
+    }
+
+    @mixin atMedium {
+      top: 150%;
+      height: 20%;
+      width: 8%;
+    }
+
+    @mixin atXLarge {
+      height: 25%;
+      width: 6%;
+    }
+
+  }
+
+
+  /* the heading 'FOSTER CARE SUPPORT TO TRANSFORM YOUNG LIVES IN BALTIMORE' on the homepage */
+  &__large-title {
+    font-family: 'BeVietnam-SemiBoldr';
+    font-size: responsive(24px, 84px);
+    max-width: 1200px;
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+
+
+  /* 'Founded in 2019 in Baltimore .... ' */
+  &__description {
+    font-size: responsive(16px, 32px);
+    line-height: 1.4;
+    max-width: 1100px;
+    margin-bottom: 2.5rem;
+
+    @mixin atXSmall {
+      margin-bottom: 2.6rem;
+    }
+
+    @mixin atSmall {
+      margin-bottom: 4rem;
+    }
+
+    @mixin atMedium {
+      margin-bottom: 3rem;
+    }
+
+    @mixin atLarge {
+      margin-bottom: 3.3rem;
+    }
+
+    @mixin atXLarge {
+      margin-bottom: 4.5rem;
+    }
+
+  }
+
+}
