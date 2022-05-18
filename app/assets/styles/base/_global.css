@@ -45,7 +45,10 @@ ul {
 
 
 /* reflex grid */
-.container {
-  padding-right: 1rem;
-  padding-left: 1rem;
+.grid {
+  min-height: 300px;
+
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    height: 600px;
+  }
 }
