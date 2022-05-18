@@ -1,0 +1,43 @@
+.footer {
+  background-color: $gray;
+
+  /* contains the social media links */
+  &__social-media-links {
+    display: flex;
+    align-items: center;
+  }
+
+  /* idividual social media links */
+  &__social-media-links li {
+    margin-right: 8px;
+
+    @mixin atXLarge {
+      margin-right: 12px;
+    }
+  }
+
+
+  /* contains the copyright & address information */
+  &__text-content {
+
+    @mixin atXLarge {
+      margin-top: -30px;
+    }
+  }
+
+  /* copyright information */
+  &__copyright {
+    margin-bottom: 20px;
+  }
+
+  /* address information */
+  &__address {
+    max-width: 139px;
+
+    @mixin atSmall {
+      max-width: 234px;
+    }
+  }
+
+
+}
