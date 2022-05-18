@@ -25,6 +25,17 @@
   }
 
 
+  /* about us page hero image */
+  &__image-about {
+    background-image: url('./assets/images/hero--about-us.jpg');
+
+    @mixin atXLarge {
+      min-height: calc(100vh - 180px);
+    }
+
+  }
+
+
   /* places the text content on the home page hero image */
   &__text-content {
     grid-column: 1/-1;
@@ -123,6 +134,10 @@
 
   }
 
+  /* center hero tile' */
+  &__large-title--center {
+    text-align: center;
+  }
 
   /* 'Founded in 2019 in Baltimore .... ' */
   &__description {
