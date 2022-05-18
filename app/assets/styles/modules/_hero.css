@@ -36,6 +36,17 @@
   }
 
 
+  /* join us page hero image */
+  &__image-join {
+    background-image: url('./assets/images/hero--join-us.jpg');
+
+    @mixin atXLarge {
+      min-height: calc(100vh - 180px);
+    }
+
+  }
+
+
   /* places the text content on the home page hero image */
   &__text-content {
     grid-column: 1/-1;
