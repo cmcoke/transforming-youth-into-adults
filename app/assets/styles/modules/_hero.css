@@ -135,8 +135,14 @@
   }
 
   /* center hero tile' */
-  &__large-title--center {
+  &__large-title-center {
+    font-size: 36px;
+    max-width: none;
     text-align: center;
+
+    @mixin atSmall {
+      font-size: 96px;
+    }
   }
 
   /* 'Founded in 2019 in Baltimore .... ' */
