@@ -6,7 +6,7 @@
   }
 
   @mixin atXLarge {
-    padding: 70px 0;
+    padding: 80px 0;
   }
 
   &__black-background {
