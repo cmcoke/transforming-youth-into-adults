@@ -68,6 +68,16 @@
 
   }
 
+  /* donate page hero image */
+  &__image-donate {
+    background-image: url('./assets/images/hero--donate.jpg');
+
+    @mixin atXLarge {
+      min-height: calc(100vh - 180px);
+    }
+
+  }
+
 
   /* places the text content on the home page hero image */
   &__text-content {
