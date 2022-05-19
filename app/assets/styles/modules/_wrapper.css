@@ -1,9 +1,10 @@
-.text-content {
+.wrapper {
 
   @mixin atMedium {
     max-width: 1060px;
     margin-right: auto;
     margin-left: auto;
   }
+
 
 }

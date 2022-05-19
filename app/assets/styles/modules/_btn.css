@@ -49,4 +49,19 @@
 
   }
 
+
+  /* refers to the register button on the individual pages */
+  &--register {
+    padding: 14px 30px;
+    border-radius: 40px;
+
+    @mixin atSmall {
+      font-size: 18px;
+    }
+
+    @mixin atLarge {
+      padding: 15px 32px;
+    }
+  }
+
 }

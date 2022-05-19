@@ -1,0 +1,24 @@
+.event {
+
+  /* event information */
+  &__information {
+    margin-bottom: 40px;
+  }
+
+  &__information li {
+    margin-bottom: 8px;
+  }
+
+  &__information p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: $black;
+
+    @mixin atSmall {
+      font-size: 24px;
+      line-height: 36px;
+    }
+  }
+
+}

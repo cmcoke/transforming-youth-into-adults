@@ -10,7 +10,7 @@
 @import "modules/_overlay";
 @import "modules/_btn";
 @import "modules/_hero";
-@import "modules/_text-content";
+@import "modules/_wrapper";
 @import "modules/_heading";
 @import "modules/_paragraph";
 @import "modules/_page-section";
@@ -20,3 +20,4 @@
 @import "modules/_modal";
 @import "modules/_card";
 @import "modules/_donate";
+@import "modules/_event";

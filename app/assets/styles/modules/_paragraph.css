@@ -12,25 +12,6 @@
     margin-bottom: 3.125rem;
   }
 
-  &--medium {
-    font-size: 16px;
-    line-height: 30px;
-
-    @mixin atSmall {
-      font-size: 18px;
-      line-height: 30px;
-    }
-
-    @mixin atMedium {
-      font-size: 21px;
-      line-height: 33px;
-    }
-  }
-
-  &--white {
-    color: #fff;
-  }
-
   &--small {
     font-size: 14px;
     font-weight: 400px;
@@ -45,13 +26,19 @@
 
   }
 
-  & a {
-    color: $green;
-    font-weight: bold;
-  }
+  &--medium {
+    font-size: 16px;
+    line-height: 30px;
 
-  &__mb {
-    margin-bottom: 3rem;
+    @mixin atSmall {
+      font-size: 18px;
+      line-height: 30px;
+    }
+
+    @mixin atMedium {
+      font-size: 21px;
+      line-height: 33px;
+    }
   }
 
   &--large {
@@ -76,7 +63,35 @@
       max-width: 1024px;
     }
 
+  }
+
+
+  &--white {
+    color: #fff;
+  }
+
+  & a {
+    color: $green;
+    font-weight: bold;
+  }
+
+  &__mb {
+    margin-bottom: 3rem;
+  }
+
+  &__mt {
+    margin-top: 3rem;
+
+    @mixin atSmall {
+      margin-top: 4rem;
+    }
+
+    @mixin atLarge {
+      margin-top: 6rem;
+    }
 
   }
+
+
 
 }
