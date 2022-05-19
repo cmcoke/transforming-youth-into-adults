@@ -9,8 +9,8 @@
     line-height: 41px;
 
     @mixin atMedium {
-      font-size: 48px;
-      line-height: 65px;
+      font-size: 45px;
+      line-height: 55px;
     }
   }
 
