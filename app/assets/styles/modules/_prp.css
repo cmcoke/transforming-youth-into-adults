@@ -1,0 +1,151 @@
+.prp {
+
+  /* creates 1 column for screens below 768px width and 2 columns on screens with 769px width and up */
+  &__grid {
+    display: grid;
+    grid-template-columns: minmax(1vw, 3vw) 1fr minmax(1vw, 3vw);
+
+    @mixin atSmall {
+      grid-template-columns: 1rem repeat(2, 1fr) 1rem;
+      gap: 0px 2em;
+    }
+
+  }
+
+  /* h3 heading 'PRP ELIGIBILITY' */
+  &__heading {
+    grid-column: 2/3;
+
+    @mixin atSmall {
+      grid-column: 2/-1;
+    }
+
+  }
+
+  & h4 {
+    font-family: 'BeVietnam-SemiBoldr';
+  }
+
+  /* content for information for adults intake */
+  &__adults {
+    grid-column: 2/3;
+    grid-row: 2/3;
+
+    @mixin atSmall {
+      grid-column: 2/3;
+    }
+
+  }
+
+
+  /* content for information for youths intake */
+  &__youths {
+    grid-column: 2/3;
+
+    @mixin atSmall {
+      grid-column: 3/4;
+    }
+
+  }
+
+  /* contains the text content for 'INTAKE FOR ADULTS' & 'INTAKES FOR YOUTHS' */
+  &__content {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    padding: 24px;
+
+    @mixin atSmall {
+      box-shadow: 0px 3.04568px 6.09136px rgba(0, 0, 0, 0.1), 0px 3.04568px 3.04568px rgba(0, 0, 0, 0.25);
+      border-radius: 6px;
+      margin-top: 0;
+      padding: 30px;
+    }
+
+    @mixin atMedium {
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1), 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 8px;
+      padding: 40px;
+    }
+  }
+
+
+  /* this is targeting the paragraph that has 'To be eligible for our program, ....'  */
+  & p {
+    font-family: 'BeVietnam-Regular';
+    font-size: 15px;
+    line-height: 21px;
+    color: $black;
+
+    @mixin atSmall {
+      font-size: 17px;
+      line-height: 23px;
+      margin-bottom: 0;
+    }
+
+    @mixin atLarge {
+      font-size: 18px;
+      line-height: 25px;
+    }
+
+  }
+
+  /* creates a line under for the words priority population*/
+  &__underline {
+    text-decoration: underline;
+  }
+
+  /* removes the left padding for the list items */
+  &__list {
+    padding-left: 15px;
+
+    @mixin atLarge {
+      margin-top: 2rem;
+    }
+
+  }
+
+  &__list li {
+
+    @mixin atLarge {
+      margin-top: -9px;
+    }
+
+  }
+
+
+  /* css styles for the numbers that are left of the text content */
+  &__list li::marker {
+    font-family: 'BeVietnam-Regular';
+    font-size: 14px;
+    line-height: 135%;
+    color: $black;
+
+    @mixin atLarge {
+      font-size: 18px;
+    }
+
+  }
+
+
+  /* this is targeting paragraphs that are in lists */
+  &__list p {
+    font-family: 'BeVietnam-Regular';
+    color: $black;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+
+    @mixin atSmall {
+      font-size: 16px;
+      line-height: 22px;
+    }
+
+    @mixin atLarge {
+      font-size: 18px;
+      line-height: 26px;
+    }
+
+  }
+
+}
