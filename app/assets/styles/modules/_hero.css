@@ -79,9 +79,59 @@
   }
 
 
-  /* community-integration page hero image */
+  /* community integration page hero image */
   &__image-community-integration {
     background-image: url('./assets/images/hero--community-integration.jpg');
+
+    @mixin atXLarge {
+      min-height: calc(100vh - 180px);
+    }
+
+  }
+
+  /* community support services page hero image */
+  &__image-community-support-services {
+    background-image: url('./assets/images/hero--community-support-services.jpg');
+
+    @mixin atXLarge {
+      min-height: calc(100vh - 180px);
+    }
+
+  }
+
+  /* prp services page hero image */
+  &__image-prp-services {
+    background-image: url('./assets/images/hero--prp-services.jpg');
+
+    @mixin atXLarge {
+      min-height: calc(100vh - 180px);
+    }
+
+  }
+
+  /* il services page hero image */
+  &__image-il-services {
+    background-image: url('./assets/images/hero--il-services.jpg');
+
+    @mixin atXLarge {
+      min-height: calc(100vh - 180px);
+    }
+
+  }
+
+  /* after youth program page hero image */
+  &__image-after-youth-program {
+    background-image: url('./assets/images/hero--after-youth-program.jpg');
+
+    @mixin atXLarge {
+      min-height: calc(100vh - 180px);
+    }
+
+  }
+
+  /* safe spaces and housing for LGBTQ youth page hero image */
+  &__image-lgbtq {
+    background-image: url('./assets/images/hero--lgbtq.jpg');
 
     @mixin atXLarge {
       min-height: calc(100vh - 180px);
@@ -178,12 +228,12 @@
 
     @mixin atSmall {
       font-size: 58px;
-      line-height: 64px;
+      line-height: 93px;
     }
 
     @mixin atLarge {
       font-size: 84px;
-      line-height: 93px;
+      line-height: 110px;
     }
 
   }
