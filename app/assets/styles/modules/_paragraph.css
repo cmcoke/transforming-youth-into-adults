@@ -34,7 +34,7 @@
   &--small {
     font-size: 14px;
     font-weight: 400px;
-    line-height: 20px;
+    line-height: 25px;
     margin-top: 0;
     margin-bottom: 0px;
 
@@ -48,6 +48,10 @@
   & a {
     color: $green;
     font-weight: bold;
+  }
+
+  &__mb {
+    margin-bottom: 3rem;
   }
 
 }

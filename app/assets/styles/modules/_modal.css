@@ -1,0 +1,144 @@
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  right: 0;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  transform: translateY(-50%);
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 60px 0;
+  margin: 40px auto;
+  opacity: 0;
+  visibility: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: all 200ms ease-in-out;
+  z-index: 11;
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  & {
+    /* IE and Edge */
+    -ms-overflow-style: none;
+
+    /* Firefox */
+    scrollbar-width: none;
+  }
+
+  /* shows the modal when a user click on a board member */
+  &--show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &__container {
+    position: relative;
+  }
+
+  /* close button */
+  &__close-button {
+    position: absolute;
+    width: 20px;
+    height: 19px;
+    top: 0px;
+    right: 40px;
+    z-index: 11;
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 30px;
+      height: 1px;
+      background-color: #828282;
+      transform-origin: 0 0;
+      transition: transform .3s ease-out;
+      transform: rotate(45deg) scaleX(1.25) translateY(-7px);
+    }
+
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      top: 16px;
+      width: 30px;
+      height: 1px;
+      background-color: #828282;
+      transform-origin: 0 100%;
+      transition: transform .3s ease-out;
+      transform: rotate(-45deg) scaleX(1.25) translateY(6px);
+    }
+
+  }
+
+
+  /* contains the profile photo & text content */
+  &__content {
+    display: grid;
+    grid-template-columns: minmax(1.25rem, 2rem) 1fr minmax(1.25rem, 2rem);
+
+    @mixin atMedium {
+      grid-template-columns: minmax(1.25rem, 5rem) 15em 1fr minmax(1.25rem, 5rem);
+    }
+
+
+  }
+
+
+  /* member photo */
+  &__member-photo {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: center;
+
+    @mixin atMedium {
+      grid-column: 2/3;
+    }
+
+  }
+
+
+  /* member bio */
+  &__member-bio {
+    grid-column: 2/3;
+    grid-row: 2/3;
+
+    @mixin atMedium {
+      grid-column: 3/4;
+      grid-row: 1/2;
+    }
+
+  }
+
+  /* member title */
+  &__member-title {
+    color: $orange;
+    font-weight: 700;
+    margin-bottom: 0;
+    letter-spacing: 0.075em;
+  }
+
+  /* member name */
+  &__member-name {
+    color: $black-medium;
+    font-size: 40px;
+    margin-top: 10px;
+  }
+
+
+
+}

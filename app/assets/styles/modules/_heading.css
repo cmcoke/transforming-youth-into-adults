@@ -63,6 +63,10 @@
     color: #fff;
   }
 
+  &--orange {
+    color: $orange;
+  }
+
   /* refers to the third section of the home page wich contains headings with icons beside them. */
   &__with-icon {
     display: flex;
@@ -134,5 +138,6 @@
     }
 
   }
+
 
 }

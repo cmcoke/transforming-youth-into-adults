@@ -1,0 +1,52 @@
+.profile {
+
+
+  /* contains the profile' photo, title & name */
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 34.7278px 0px 0px;
+    border-radius: 6px;
+    background-color: $black-medium;
+    margin-top: 3rem;
+    cursor: pointer;
+
+    @mixin atSmall {
+      padding: 40px 0px 0px;
+    }
+  }
+
+  /* profile photo */
+  &__photo {
+    text-align: center;
+    position: relative;
+    top: -120px;
+  }
+
+
+  /* profile title */
+  &__title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0.075em;
+    text-transform: uppercase;
+    color: $orange;
+    margin-bottom: 0;
+    margin-top: -6rem;
+  }
+
+
+  /* profile name */
+  &__name {
+    color: #fff;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    margin-top: 0;
+    margin-bottom: 56px;
+  }
+
+}
