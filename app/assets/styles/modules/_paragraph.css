@@ -93,5 +93,25 @@
   }
 
 
+  /* creates the orange dots to the left of paragraphs that are in a list. */
+  &__lists li {
+    position: relative;
+    list-style-type: none;
+  }
+
+  &__lists li:before {
+    position: absolute;
+    content: "";
+    top: 55%;
+    transform: translateY(-55%);
+    left: 0px;
+    width: 8px;
+    height: 8px;
+    background-image: url('./assets/images/orange-circle.png');
+  }
+
+  &__lists p {
+    margin-left: 24px;
+  }
 
 }
