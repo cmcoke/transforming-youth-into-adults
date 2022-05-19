@@ -47,6 +47,17 @@
   }
 
 
+  /* services page hero image */
+  &__image-services {
+    background-image: url('./assets/images/hero--services.jpg');
+
+    @mixin atXLarge {
+      min-height: calc(100vh - 180px);
+    }
+
+  }
+
+
   /* places the text content on the home page hero image */
   &__text-content {
     grid-column: 1/-1;
