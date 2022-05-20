@@ -1,15 +1,28 @@
 .wrapper {
 
+  /* used to set the max width of text content with paragraphs. */
   @mixin atMedium {
     max-width: 1060px;
     margin-right: auto;
     margin-left: auto;
   }
 
+  /* this css styles is for the 'PRP ELIGIBILITY' cards on the 'PRP Services' page. */
   &--prp {
 
     @mixin atLarge {
       max-width: 1260px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+  }
+
+  /* the css style is for the large title on the hero image of the 'Safe Space and Housing For LGBTQ Youth' page.  */
+  &--lgbtq-title {
+
+    @mixin atLarge {
+      max-width: 1147px;
       margin-right: auto;
       margin-left: auto;
     }

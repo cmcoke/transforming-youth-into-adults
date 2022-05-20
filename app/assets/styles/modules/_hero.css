@@ -159,19 +159,23 @@
   /* the heading 'TRANSFORMING YOUTHS INTO ADULTS' on the homepage  */
   &__small-title {
     position: relative;
-    font-size: 12px;
+    font-size: calc(.93rem, 1vw + 1rem, 1rem);
     font-weight: 700;
+    max-width: 500px;
     letter-spacing: 0.12em;
-    line-height: 18px;
+    line-height: 22px;
     letter-spacing: 0.12em;
 
     @mixin atSmall {
-      font-size: 16px;
+      font-size: 1rem;
       line-height: 23px;
+      max-width: 400px;
     }
 
-    @mxin atMedium {
-      font-size: 24px;
+    @mxin aLarge {
+      font-size: 1.5rem;
+      line-height: 35px;
+      max-width: 524px;
     }
   }
 
@@ -184,7 +188,7 @@
     width: 57px;
     height: 3px;
     left: 0;
-    top: 120%;
+    top: 130%;
     background-color: $green;
 
     @media (min-width: 448px) {
@@ -193,25 +197,17 @@
 
     @media (min-width: 480px) {
       top: 150%;
-      height: 15%;
       width: 17%;
     }
 
     @mixin atSmall {
       width: 80px;
       height: 4px;
+      top: 31px;
     }
 
-    @mixin atMedium {
-      top: 150%;
+    @mixin atLarge {
       height: 6px;
-      width: 114px;
-      width: 80px;
-    }
-
-    @mixin atXLarge {
-      height: 25%;
-      width: 6%;
     }
 
   }
@@ -220,20 +216,22 @@
   /* the heading 'FOSTER CARE SUPPORT TO TRANSFORM YOUNG LIVES IN BALTIMORE' on the homepage */
   &__large-title {
     font-family: 'BeVietnam-SemiBoldr';
-    font-size: 24px;
-    line-height: 40px;
-    max-width: 1200px;
+    font-size: calc(1.3rem, 1vw + 1rem, 2rem);
+    line-height: 111.1%;
+    max-width: 550px;
     margin-top: 30px;
     margin-bottom: 0;
 
     @mixin atSmall {
-      font-size: 58px;
-      line-height: 93px;
+      font-size: 3.625rem;
+      line-height: 111.1%;
+      max-width: 822px;
     }
 
     @mixin atLarge {
-      font-size: 84px;
-      line-height: 110px;
+      font-size: 5.25rem;
+      line-height: 111.1%;
+      max-width: 1190px;
     }
 
   }
@@ -251,9 +249,9 @@
 
   /* 'Founded in 2019 in Baltimore .... ' */
   &__description {
-    font-size: 16px;
-    line-height: 1.4;
-    max-width: 1100px;
+    font-size: 1.2rem;
+    line-height: 135%;
+    max-width: 500px;
     margin-bottom: 2.1875rem;
 
     @mixin atXSmall {
@@ -261,16 +259,21 @@
     }
 
     @mixin atSmall {
-      font-size: 22px;
+      font-size: 1.375rem;
+      line-height: 135%;
       margin-bottom: 4rem;
+      max-width: 668px;
     }
 
     @mixin atMedium {
+
       margin-bottom: 3rem;
     }
 
     @mixin atLarge {
-      font-size: 32px;
+      font-size: 2rem;
+      line-height: 135%;
+      max-width: 980px;
       margin-bottom: 3.3rem;
     }
 
