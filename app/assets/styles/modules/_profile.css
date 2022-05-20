@@ -1,6 +1,5 @@
 .profile {
 
-
   /* contains the profile' photo, title & name */
   &__content {
     display: flex;
@@ -16,6 +15,10 @@
     @mixin atSmall {
       padding: 40px 0px 0px;
     }
+  }
+
+  &__hide {
+    display: none;
   }
 
   /* profile photo */

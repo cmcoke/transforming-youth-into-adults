@@ -95,6 +95,10 @@
     cursor: pointer;
   }
 
+  &__hide {
+    display: none;
+  }
+
 
   /* places the 'USD' image at the right of the text field */
   &__us-currency {
