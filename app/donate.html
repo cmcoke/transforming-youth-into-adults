@@ -71,8 +71,74 @@
       <!-- second section -->
       <div class="donate page-section page-section__gray-background">
 
-        <div class="wrapper">
-          <p class="paragraph--large">Remember To Create The Donate Form Here</p>
+        <div class="container">
+
+          <div class="wrapper">
+
+            <form action="#" class="donate">
+
+              <div class="grid">
+
+                <!-- payment plan -->
+                <div class="col-12 col-sm-6">
+                  <input class="donate__radio-input" type="radio" name="radio1" id="one-time" value="one-time"
+                    checked><label class="donate__payment-plan" for="one-time">ONE TIME</label>
+                </div>
+
+                <div class="col-12 col-sm-6">
+                  <input class="donate__radio-input" type="radio" name="radio1" id="monthly" value="monthly"><label
+                    class="donate__payment-plan" for="monthly">MONTHLY</label>
+                </div>
+
+                <!-- amount -->
+                <div class="col-6 col-md-3">
+                  <input class="donate__radio-input selected" type="radio" name="radio2" id="10" value="10"><label
+                    class="donate__amount" for="10">$10</label>
+                </div>
+
+                <div class="col-6 col-md-3">
+                  <input class="donate__radio-input selected" type="radio" name="radio2" id="25" value="25"><label
+                    class="donate__amount" for="25">$25</label>
+                </div>
+
+                <div class="col-6 col-md-3">
+                  <input class="donate__radio-input selected" type="radio" name="radio2" id="50" value="50"><label
+                    class="donate__amount" for="50">$50</label>
+                </div>
+
+                <div class="col-6 col-md-3">
+                  <input class="donate__radio-input selected" type="radio" name="radio2" id="100" value="100"><label
+                    class="donate__amount" for="100">$100</label>
+                </div>
+
+                <!-- input value from amount -->
+                <div class="col-12">
+
+                  <div class="donate__value-wrapper">
+
+                    <div class="donate__dollar-sign"></div>
+
+                    <div class="donate__text-input">
+                      <input type="text" class="donate__value"><input type="submit" class="donate__us-currency"
+                        value="" />
+                      <div class="donate__bar"></div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <!-- submit button -->
+                <div class="col-12">
+                  <input class="donate__submit" type="submit" value="DONATE">
+                </div>
+
+              </div>
+
+            </form>
+
+          </div>
+
         </div>
 
       </div>

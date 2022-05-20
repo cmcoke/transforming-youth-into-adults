@@ -3,9 +3,11 @@ import "lazysizes";
 import "picturefill";
 import MobileMenu from "./modules/MobileMenu";
 // import Modal from "./modules/Modal";
+import DonationForm from "./modules/DonationForm";
 
 let mobileMenu = new MobileMenu();
 // let modal = new Modal();
+let donateForm = new DonationForm();
 
 // allows webpack-dev-server to be executed by allowing hot module replacements and accepts updates on the fly
 if (module.hot) {
