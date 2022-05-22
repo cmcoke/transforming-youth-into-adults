@@ -6,12 +6,14 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import MobileMenu from "./modules/MobileMenu";
 import DonationForm from "./modules/DonationForm";
 // import HomePageAnimations from './modules/HomePageAnimations';
-import AboutUsPageAnimations from './modules/AboutUsPageAnimations';
+// import AboutUsPageAnimations from './modules/AboutUsPageAnimations';
+import JoinUsPageAnimations from './modules/JoinUsPageAnimations';
 
 new MobileMenu();
 new DonationForm();
 // new HomePageAnimations();
-new AboutUsPageAnimations();
+// new AboutUsPageAnimations();
+new JoinUsPageAnimations();
 
 // performs a code split for the modal.js file
 let modal;
