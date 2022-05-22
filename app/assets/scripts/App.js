@@ -5,11 +5,13 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import MobileMenu from "./modules/MobileMenu";
 import DonationForm from "./modules/DonationForm";
-import HomePageAnimations from './modules/HomePageAnimations';
+// import HomePageAnimations from './modules/HomePageAnimations';
+import AboutUsPageAnimations from './modules/AboutUsPageAnimations';
 
 new MobileMenu();
 new DonationForm();
-new HomePageAnimations();
+// new HomePageAnimations();
+new AboutUsPageAnimations();
 
 // performs a code split for the modal.js file
 let modal;

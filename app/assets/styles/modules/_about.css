@@ -69,4 +69,13 @@
     margin-right: 10px;
   }
 
+
+
+
+}
+
+
+/* prevent horizontal scrollbar from appearing when the stated section is being animated by GSAP  */
+#about-us-page-third-section {
+  overflow: hidden;
 }
