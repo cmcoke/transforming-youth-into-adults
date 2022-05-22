@@ -4,18 +4,20 @@ import "picturefill";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import MobileMenu from "./modules/MobileMenu";
-import DonationForm from "./modules/DonationForm";
+// import DonationForm from "./modules/DonationForm";
 // import HomePageAnimations from './modules/HomePageAnimations';
 // import AboutUsPageAnimations from './modules/AboutUsPageAnimations';
 // import JoinUsPageAnimations from './modules/JoinUsPageAnimations';
-import ServicesPageAnimations from './modules/ServicesPageAnimations';
+// import ServicesPageAnimations from './modules/ServicesPageAnimations';
+import EventsPageAnimations from './modules/EventsPageAnimations';
 
 new MobileMenu();
-new DonationForm();
+// new DonationForm();
 // new HomePageAnimations();
 // new AboutUsPageAnimations();
 // new JoinUsPageAnimations();
-new ServicesPageAnimations();
+// new ServicesPageAnimations();
+new EventsPageAnimations();
 
 // performs a code split for the modal.js file
 let modal;
