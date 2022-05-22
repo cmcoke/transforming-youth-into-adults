@@ -1,11 +1,15 @@
 import "../styles/styles.css";
 import "lazysizes";
 import "picturefill";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
 import MobileMenu from "./modules/MobileMenu";
 import DonationForm from "./modules/DonationForm";
+import HomePageAnimations from './modules/HomePageAnimations';
 
 new MobileMenu();
 new DonationForm();
+new HomePageAnimations();
 
 // performs a code split for the modal.js file
 let modal;
