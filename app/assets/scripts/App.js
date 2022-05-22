@@ -7,13 +7,15 @@ import MobileMenu from "./modules/MobileMenu";
 import DonationForm from "./modules/DonationForm";
 // import HomePageAnimations from './modules/HomePageAnimations';
 // import AboutUsPageAnimations from './modules/AboutUsPageAnimations';
-import JoinUsPageAnimations from './modules/JoinUsPageAnimations';
+// import JoinUsPageAnimations from './modules/JoinUsPageAnimations';
+import ServicesPageAnimations from './modules/ServicesPageAnimations';
 
 new MobileMenu();
 new DonationForm();
 // new HomePageAnimations();
 // new AboutUsPageAnimations();
-new JoinUsPageAnimations();
+// new JoinUsPageAnimations();
+new ServicesPageAnimations();
 
 // performs a code split for the modal.js file
 let modal;
