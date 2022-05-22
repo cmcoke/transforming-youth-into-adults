@@ -9,7 +9,8 @@ import MobileMenu from "./modules/MobileMenu";
 // import AboutUsPageAnimations from './modules/AboutUsPageAnimations';
 // import JoinUsPageAnimations from './modules/JoinUsPageAnimations';
 // import ServicesPageAnimations from './modules/ServicesPageAnimations';
-import EventsPageAnimations from './modules/EventsPageAnimations';
+// import EventsPageAnimations from './modules/EventsPageAnimations';
+import DonatePageAnimations from './modules/DonatePageAnimations';
 
 new MobileMenu();
 // new DonationForm();
@@ -17,7 +18,8 @@ new MobileMenu();
 // new AboutUsPageAnimations();
 // new JoinUsPageAnimations();
 // new ServicesPageAnimations();
-new EventsPageAnimations();
+// new EventsPageAnimations();
+new DonatePageAnimations();
 
 // performs a code split for the modal.js file
 let modal;

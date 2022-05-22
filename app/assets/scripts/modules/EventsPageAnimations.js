@@ -24,11 +24,11 @@ class EventsPageAnimations {
   }
 
   events() {
-    window.addEventListener('load', () => this.ServicesPage());
+    window.addEventListener('load', () => this.EventsPage());
   }
 
 
-  ServicesPage(){
+  EventsPage(){
 
     // hero section
     this.hero.from('#events-page-hero-title', {opacity: 0}, .5);
