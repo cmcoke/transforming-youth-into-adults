@@ -40,7 +40,7 @@ class EventsPageAnimations {
     this.thirdSection.from('#events-page-third-section', {opacity: 0, duration: 1});
     this.thirdSection.from('#events-page-cards', {opacity: 0, y: 60}, 1);
     // footer section
-    this.thirdSection.from('#footer', {opacity: 0}, '<1.3');
+    this.thirdSection.from('#events-page-footer', {opacity: 0}, '<1.4');
    
   }
   

@@ -50,7 +50,7 @@ class JoinUsPageAnimations {
     // third section profile
     this.thirdSectionProfile.from('#join-us-page-third-section-profile', {opacity: 0, duration: 1});
     // footer
-    this.thirdSectionProfile.from('#footer', {opacity: 0}, '<1');
+    this.thirdSectionProfile.from('#join-us-page-footer', {opacity: 0}, '<1');
    
   }
   

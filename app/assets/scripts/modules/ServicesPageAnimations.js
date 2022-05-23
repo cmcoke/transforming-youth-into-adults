@@ -22,7 +22,7 @@ class ServicesPageAnimations {
 
     this.footer = gsap.timeline(({
       scrollTrigger: {
-        trigger: '#footer',
+        trigger: '#services-page-footer',
         start: "bottom 30%",
       }
     }));
@@ -48,7 +48,7 @@ class ServicesPageAnimations {
     this.thirdSection.from('#services-page-cards', {opacity: 0, y: 60}, 1);
 
     // footer section
-    this.footer.from('#footer', {opacity: 0});
+    this.footer.from('#services-page-footer', {opacity: 0}, 1.2);
    
   }
   

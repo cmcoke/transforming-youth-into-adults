@@ -73,7 +73,7 @@ class HomePageAnimations {
     this.fifthSection.from('#homepage-fifth-section-book-icon',{opacity: 0});
     this.fifthSection.from('#homepage-fifth-section-text-content',{opacity: 0});
     // footer
-    this.fifthSection.from('#footer', {opacity:0}, '<1.5')
+    this.fifthSection.from('#homepage-footer', {opacity:0}, '<1.4')
 
   }
   

@@ -22,7 +22,7 @@ class DonatePageAnimations {
 
     this.footer = gsap.timeline(({
       scrollTrigger: {
-        trigger: '#footer',
+        trigger: '#donate-page-footer',
         start: 'top 80%',
       }
     }));
@@ -48,7 +48,7 @@ class DonatePageAnimations {
     this.thirdSection.from('#donate-page-third-section', {opacity: 0, duration: 1});
    
     // footer section
-    this.footer.from('#footer', {opacity: 0});
+    this.footer.from('#donate-page-footer', {opacity: 0});
 
   }
   

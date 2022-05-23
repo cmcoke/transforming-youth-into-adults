@@ -54,7 +54,7 @@ class AboutUsPageAnimations {
     // fourth section
     this.fourthSection.from('#about-us-page-fourth-section', {opacity: 0, duration: 1});
     // footer
-    this.fourthSection.from('#footer', {opacity: 0}, '<1.5');
+    this.fourthSection.from('#about-us-page-footer', {opacity: 0}, '<1.5');
 
   }
   
