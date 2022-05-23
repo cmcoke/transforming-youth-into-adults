@@ -50,7 +50,7 @@ class HomePageAnimations {
     this.hero.from('#homepage-hero-small-title', {opacity: 0}, .5);
     this.hero.from('#homepage-hero-large-title', {y: 90, opacity: 0}, '<1');
     this.hero.from('#homepage-hero-description', {opacity: 0});
-    this.hero.from('#homepage-hero-button', {opacity: 0});
+    this.hero.from('.btn--large', {opacity: 0});
 
     // second section
     this.secondSection.from('#homepage-second-section-first-text-content', {opacity: 0, duration: 1});

@@ -52,3 +52,11 @@ ul {
     height: 600px;
   }
 }
+
+// prevents elements with transistions from appearing on a page load
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}

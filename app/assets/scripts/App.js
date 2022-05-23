@@ -36,6 +36,14 @@ document.querySelector(".profile__content").addEventListener("click", () => {
   }
 });
 
+
+// prevents elements with transisition from appearing on page load.
+let pageBody = document.querySelector('body')
+window.addEventListener('load', () => {
+  pageBody.classList.remove('preload')
+})
+
+
 // allows webpack-dev-server to be executed by allowing hot module replacements and accepts updates on the fly
 if (module.hot) {
   module.hot.accept();
