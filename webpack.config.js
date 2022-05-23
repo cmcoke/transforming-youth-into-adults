@@ -23,10 +23,12 @@ const postCSSPlugins = [
 ]
 
 // copy images from './app/assets/images' to './dist/assets/images' -- PLEASE NOTE THAT './dist/assets/images' IS CHANGED TO './docs/assets/images' BECAUSE GITHUB PAGES IS BEING USED TO DEPLOY THE SITE ONLINE
+// copy fonts from './app/assets/fonts' to './dist/assets/fonts' -- PLEASE NOTE THAT './dist/assets/fonts' IS CHANGED TO './docs/assets/fonts' BECAUSE GITHUB PAGES IS BEING USED TO DEPLOY THE SITE ONLINE
 class RunAfterCompile {
   apply(compiler){
     compiler.hooks.done.tap('Copy images', function() {
       fse.copySync('./app/assets/images', './docs/assets/images')
+      fse.copySync('./app/assets/fonts', './docs/assets/fonts')
     })
   }
 }

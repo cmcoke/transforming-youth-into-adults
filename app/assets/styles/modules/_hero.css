@@ -159,7 +159,7 @@
   /* the heading 'TRANSFORMING YOUTHS INTO ADULTS' on the homepage  */
   &__small-title {
     position: relative;
-    font-size: calc(.93rem, 1vw + 1rem, 1rem);
+    font-size: 1.2rem;
     font-weight: 700;
     max-width: 500px;
     letter-spacing: 0.12em;
@@ -216,7 +216,7 @@
   /* the heading 'FOSTER CARE SUPPORT TO TRANSFORM YOUNG LIVES IN BALTIMORE' on the homepage */
   &__large-title {
     font-family: 'BeVietnam-SemiBoldr';
-    font-size: calc(1.3rem, 1vw + 1rem, 2rem);
+    font-size: 2rem;
     line-height: 111.1%;
     max-width: 550px;
     margin-top: 30px;
