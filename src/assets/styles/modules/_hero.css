@@ -165,6 +165,7 @@
     letter-spacing: 0.12em;
     line-height: 22px;
     letter-spacing: 0.12em;
+    opacity: 0;
 
     @mixin atSmall {
       font-size: 1rem;
@@ -212,8 +213,7 @@
 
   }
 
-
-  /* the heading 'FOSTER CARE SUPPORT TO TRANSFORM YOUNG LIVES IN BALTIMORE' on the homepage */
+  /* the large heading on each page banner */
   &__large-title {
     font-family: 'BeVietnam-SemiBoldr';
     font-size: 2rem;
@@ -236,6 +236,12 @@
 
   }
 
+
+  /* the heading 'FOSTER CARE SUPPORT TO TRANSFORM YOUNG LIVES IN BALTIMORE' on the homepage */
+  &__large-title-home {
+    transform: translateY(80px);
+  }
+
   /* center hero tile' */
   &__large-title-center {
     font-size: 36px;
@@ -253,6 +259,7 @@
     line-height: 135%;
     max-width: 500px;
     margin-bottom: 2.1875rem;
+    opacity: 0;
 
     @mixin atXSmall {
       margin-bottom: 2.6rem;

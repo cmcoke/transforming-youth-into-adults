@@ -1,118 +1,103 @@
 .donate {
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem 0;
+  align-items: center;
+  justify-items: center;
 
-  /* for GSAP & ScrollTrigger animations */
-  opacity: 0;
-  transform: translateY(15px);
+  @mixin atSmall {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0 1rem;
+    margin-top: 6rem;
+    margin-bottom: 4rem;
+  }
 
-  /* removes the radio button circle */
-  &__radio-input {
-    display: none;
+  @mixin atMedium {
+    gap: 0 2rem;
   }
 
 
-  /* playment plans & the different amount */
-  &__payment-plan, &__amount {
-    display: block;
-    text-align: center;
-    font-size: 24px;
-    font-weight: 800;
-    line-height: 135%;
-    color: $medium-gray;
-    background-color: #fff;
-    border: 2px solid $medium-gray;
-    border-radius: 8px;
-    padding: 10px;
-    height: 60px;
-    cursor: pointer;
-    transition: all .3s ease-out;
-  }
-
-
-  /* apply the stated styles whenever one of the playment plans & the different amount are clicked */
-  input[type="radio"]:checked+label {
-    color: #fff;
-    background-color: $green;
-    border: 2px solid $green;
-  }
-
-
-  /* text field */
-  &__value {
-    width: 100%;
-    border: none;
-    border-radius: 0;
-    background: transparent;
-    color: $black-medium;
-    outline: none;
-    font-family: 'BeVietnam-Medium';
-    font-size: 30px;
-  }
-
-
-  /* black line used to replace the text filed */
-  &__bar {
-    position: relative;
-    background: black;
-    content: "";
-    height: 2px;
-  }
-
-  &__before {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 150%;
-  }
-
-
-  /* allows the dollar sign and input text field to be side by side */
-  &__value-wrapper {
+  /* contains the image of the donation platform, text content and donate link */
+  &__content {
     display: grid;
-    grid-template-columns: 2em 1fr;
-    align-items: end;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr min-content 4rem;
+
+    @mixin atSmall {
+      grid-template-columns: 1fr;
+    }
+
+    @mixin atLarge {
+      grid-template-rows: 7rem min-content 4rem;
+    }
+
+  }
+
+  /* Click Button to Donate using ... */
+  &__content .paragraph--medium {
+    margin-top: .3rem;
+  }
+
+  /*  cash app & paypal logo */
+  &__content img {
+
+    @mixin atLarge {
+      max-width: 19rem;
+      margin: 0 auto;
+    }
+
+  }
+
+  /* centers the cash app & paypal content */
+  &__content a {
+    justify-self: center;
   }
 
 
-  /* adds the dollar sign to the left of the text field */
-  &__dollar-sign {
-    background-image: url('./assets/images/dollar-sign.png');
+  /* amazon platform */
+  &__amazon {
+    position: relative;
+    background-image: url('./assets/images/amazon-bg-banner.png');
+    background-size: cover;
     background-repeat: no-repeat;
-    width: 40px;
-    height: 40px;
-    display: inline-block;
+    width: 300px;
+    height: 250px;
+    color: $black;
   }
 
 
-  /* donate button */
-  &__submit {
-    display: block;
+  &__amazon-text-content {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    right: 0;
+  }
+
+
+  /* Support Transforming Youths Into Adults */
+  &__amazon-text-content h3 {
+    font-size: 22px;
+    line-height: 28px;
+    margin-bottom: 0;
+    padding: 0 1rem;
+  }
+
+
+  /* When you shop at smile.amazon.com ... */
+  &__amazon-text-content p {
+    font-family: 'BeVietnam-Regular';
+    font-size: 15px;
+    line-height: 20px;
+    color: $black;
     text-align: center;
-    font-size: 24px;
-    font-weight: 800;
-    line-height: 135%;
-    color: #fff;
-    background-color: $green;
-    border: 2px solid $green;
-    padding: 10px;
-    border-radius: 8px;
-    width: 100%;
-    cursor: pointer;
-  }
-
-  &__hide {
-    display: none;
-  }
-
-
-  /* places the 'USD' image at the right of the text field */
-  &__us-currency {
-    border: 0;
+    margin: .5rem 0 0rem 0;
     padding: 0;
-    margin: -34px 0 0 -22px;
-    width: 80px;
-    height: 33px;
-    background: transparent url('./assets/images/usd.png') center center no-repeat;
-    float: right;
+    background: 0 0;
+
   }
+
 
 }

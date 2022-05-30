@@ -6,54 +6,49 @@ class JoinUsPageAnimations {
   constructor() {
     this.hero = gsap.timeline();
 
-    this.secondSection = gsap.timeline(({
+    this.secondSection = gsap.timeline({
       scrollTrigger: {
-        trigger: '#join-us-page-second-section',
-        start: 'top center'
+        trigger: "#join-us-page-second-section",
+        start: "top center"
       }
-    }));
+    });
 
-    this.thirdSectionHeding = gsap.timeline(({
+    this.thirdSectionHeding = gsap.timeline({
       scrollTrigger: {
-        trigger: '#join-us-page-third-section-heading',
-        start: 'top center'
+        trigger: "#join-us-page-third-section-heading",
+        start: "top center"
       }
-    }));
+    });
 
-    this.thirdSectionProfile = gsap.timeline(({
+    this.thirdSectionProfile = gsap.timeline({
       scrollTrigger: {
-        trigger: '#join-us-page-third-section-profile',
-        start: 'top center'
+        trigger: "#join-us-page-third-section-profile",
+        start: "top center"
       }
-    }));
-
+    });
 
     this.events();
   }
 
   events() {
-    window.addEventListener('load', () => this.JoinUsPage());
+    window.addEventListener("load", () => this.JoinUsPage());
   }
 
-
-  JoinUsPage(){
-
+  JoinUsPage() {
     // hero section
-    this.hero.from('#join-us-page-hero-title', {opacity: 0}, .5);
+    this.hero.to("#join-us-page-hero-title", { opacity: 1 }, 0.5);
 
     // second section
-    this.secondSection.from('#join-us-page-second-section', {opacity: 0, duration: 1});
+    this.secondSection.to("#join-us-page-second-section", { opacity: 1, duration: 1 });
 
     // third section heading
-    this.thirdSectionHeding.from('#join-us-page-third-section-heading', {opacity: 0, duration: 1});
+    this.thirdSectionHeding.from("#join-us-page-third-section-heading", { opacity: 0, duration: 1 });
 
     // third section profile
-    this.thirdSectionProfile.from('#join-us-page-third-section-profile', {opacity: 0, duration: 1});
+    this.thirdSectionProfile.from("#join-us-page-third-section-profile", { opacity: 0, duration: 1 });
     // footer
-    this.thirdSectionProfile.from('#join-us-page-footer', {opacity: 0}, '<1');
-   
+    this.thirdSectionProfile.from("#join-us-page-footer", { opacity: 0 }, "<1");
   }
-  
 }
 
 new JoinUsPageAnimations();

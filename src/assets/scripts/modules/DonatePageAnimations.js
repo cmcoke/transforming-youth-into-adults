@@ -6,52 +6,37 @@ class DonatePageAnimations {
   constructor() {
     this.hero = gsap.timeline();
 
-    this.secondSection = gsap.timeline(({
+    this.secondSection = gsap.timeline({
       scrollTrigger: {
-        trigger: '#donate-page-second-section',
-        start: 'top center'
+        trigger: "#donate-page-second-section",
+        start: "top center"
       }
-    }));
+    });
 
-    this.thirdSection = gsap.timeline(({
+    this.footer = gsap.timeline({
       scrollTrigger: {
-        trigger: '#donate-page-third-section',
-        start: 'top center',
+        trigger: "#donate-page-footer",
+        start: "top 80%"
       }
-    }));
-
-    this.footer = gsap.timeline(({
-      scrollTrigger: {
-        trigger: '#donate-page-footer',
-        start: 'top 80%',
-      }
-    }));
+    });
 
     this.events();
   }
 
   events() {
-    window.addEventListener('load', () => this.DonatePage());
+    window.addEventListener("load", () => this.DonatePage());
   }
 
-
-  DonatePage(){
-
+  DonatePage() {
     // hero section
-    this.hero.from('#donate-page-hero-title', {opacity: 0}, .5);
+    this.hero.to("#donate-page-hero-title", { opacity: 1 }, 0.5);
 
     // second section
-    this.secondSection.from('#donate-page-second-section', {opacity: 0, duration: 1});
-    this.secondSection.to('.donate', {opacity: 1, y: 0}, '<.5');
+    this.secondSection.to("#donate-page-second-section", { opacity: 1, duration: 1 });
 
-    // third section
-    this.thirdSection.from('#donate-page-third-section', {opacity: 0, duration: 1});
-   
     // footer section
-    this.footer.from('#donate-page-footer', {opacity: 0});
-
+    this.footer.from("#donate-page-footer", { opacity: 0 });
   }
-  
 }
 
 new DonatePageAnimations();

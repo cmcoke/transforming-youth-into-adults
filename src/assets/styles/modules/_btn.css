@@ -42,7 +42,6 @@
     font-size: 16px;
     font-weight: bold;
     border-radius: 9rem;
-    opacity: 0;
 
     @mixin atSmall {
       padding: 1.25rem 3.3375rem;
@@ -67,6 +66,24 @@
 
     @mixin atLarge {
       padding: 15px 32px;
+    }
+  }
+
+
+  /* donate button on the donate page */
+  &--donate {
+    font-size: 18px;
+    padding: 18px 60px;
+    border-radius: 44px;
+  }
+
+  &--donate-blue {
+    background-color: rgb(32, 92, 170);
+    border: 1px solid rgb(32, 92, 170);
+
+    &:hover {
+      color: rgb(32, 92, 170);
+      border: 1px solid rgb(32, 92, 170);
     }
   }
 
