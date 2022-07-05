@@ -40,7 +40,8 @@ let config = {
     services_page_animation: path.resolve(__dirname, "./src/assets/scripts/modules/ServicesPageAnimations.js"),
     events_page_animation: path.resolve(__dirname, "./src/assets/scripts/modules/EventsPageAnimations.js"),
     donate_page_animation: path.resolve(__dirname, "./src/assets/scripts/modules/DonatePageAnimations.js"),
-    modal: path.resolve(__dirname, "./src/assets/scripts/modules/Modal.js")
+    modal: path.resolve(__dirname, "./src/assets/scripts/modules/Modal.js"),
+    contact_page_animation: path.resolve(__dirname, "./src/assets/scripts/modules/ContactUsPageAnimations.js")
   },
 
   // plugins
@@ -49,90 +50,97 @@ let config = {
     new HtmlWebpackPlugin({
       filename: "index.html",
       template: path.resolve(__dirname, "./src/index.html"),
-      excludeChunks: ["about_us_page_animation", "join_us_page_animation", "services_page_animation", "events_page_animation", "donate_page_animation", "modal"]
+      excludeChunks: ["about_us_page_animation", "join_us_page_animation", "services_page_animation", "events_page_animation", "donate_page_animation", "modal", "contact_page_animation"]
     }),
 
     // about us page
     new HtmlWebpackPlugin({
       filename: "about-us.html",
       template: path.resolve(__dirname, "./src/about-us.html"),
-      excludeChunks: ["home_page_animation", "join_us_page_animation", "services_page_animation", "events_page_animation", "donate_page_animation", "modal"]
+      excludeChunks: ["home_page_animation", "join_us_page_animation", "services_page_animation", "events_page_animation", "donate_page_animation", "modal", "contact_page_animation"]
     }),
 
     // join us page
     new HtmlWebpackPlugin({
       filename: "join-us.html",
       template: path.resolve(__dirname, "./src/join-us.html"),
-      excludeChunks: ["home_page_animation", "about_us_page_animation", "services_page_animation", "events_page_animation", "donate_page_animation"]
+      excludeChunks: ["home_page_animation", "about_us_page_animation", "services_page_animation", "events_page_animation", "donate_page_animation", "contact_page_animation"]
     }),
 
     // services page
     new HtmlWebpackPlugin({
       filename: "services.html",
       template: path.resolve(__dirname, "./src/services.html"),
-      excludeChunks: ["home_page_animation", "about_us_page_animation", "join_us_page_animation", "events_page_animation", "donate_page_animation", "modal"]
+      excludeChunks: ["home_page_animation", "about_us_page_animation", "join_us_page_animation", "events_page_animation", "donate_page_animation", "modal", "contact_page_animation"]
     }),
 
     // events page
     new HtmlWebpackPlugin({
       filename: "events.html",
       template: path.resolve(__dirname, "./src/events.html"),
-      excludeChunks: ["home_page_animation", "about_us_page_animation", "join_us_page_animation", "services_page_animation", "donate_page_animation", "modal"]
+      excludeChunks: ["home_page_animation", "about_us_page_animation", "join_us_page_animation", "services_page_animation", "donate_page_animation", "modal", "contact_page_animation"]
     }),
 
     // donate page
     new HtmlWebpackPlugin({
       filename: "donate.html",
       template: path.resolve(__dirname, "./src/donate.html"),
-      excludeChunks: ["home_page_animation", "about_us_page_animation", "join_us_page_animation", "services_page_animation", "events_page_animation", "modal"]
+      excludeChunks: ["home_page_animation", "about_us_page_animation", "join_us_page_animation", "services_page_animation", "events_page_animation", "modal", "contact_page_animation"]
     }),
 
     // community integration page
     new HtmlWebpackPlugin({
       filename: "community-integration.html",
       template: path.resolve(__dirname, "./src/community-integration.html"),
-      excludeChunks: ["home_page_animation", "about_us_page_animation", "join_us_page_animation", "services_page_animation", "events_page_animation", "donate_page_animation", "modal"]
+      excludeChunks: ["home_page_animation", "about_us_page_animation", "join_us_page_animation", "services_page_animation", "events_page_animation", "donate_page_animation", "modal", "contact_page_animation"]
     }),
 
     // community support services page
     new HtmlWebpackPlugin({
       filename: "community-support-services.html",
       template: path.resolve(__dirname, "./src/community-support-services.html"),
-      excludeChunks: ["home_page_animation", "about_us_page_animation", "join_us_page_animation", "services_page_animation", "events_page_animation", "donate_page_animation", "modal"]
+      excludeChunks: ["home_page_animation", "about_us_page_animation", "join_us_page_animation", "services_page_animation", "events_page_animation", "donate_page_animation", "modal", "contact_page_animation"]
     }),
 
     // prp services page
     new HtmlWebpackPlugin({
       filename: "prp-services.html",
       template: path.resolve(__dirname, "./src/prp-services.html"),
-      excludeChunks: ["home_page_animation", "about_us_page_animation", "join_us_page_animation", "services_page_animation", "events_page_animation", "donate_page_animation", "modal"]
+      excludeChunks: ["home_page_animation", "about_us_page_animation", "join_us_page_animation", "services_page_animation", "events_page_animation", "donate_page_animation", "modal", "contact_page_animation"]
     }),
 
     // independent living services page
     new HtmlWebpackPlugin({
       filename: "independent-living-services.html",
       template: path.resolve(__dirname, "./src/independent-living-services.html"),
-      excludeChunks: ["home_page_animation", "about_us_page_animation", "join_us_page_animation", "services_page_animation", "events_page_animation", "donate_page_animation", "modal"]
+      excludeChunks: ["home_page_animation", "about_us_page_animation", "join_us_page_animation", "services_page_animation", "events_page_animation", "donate_page_animation", "modal", "contact_page_animation"]
     }),
 
     // after youth program page
     new HtmlWebpackPlugin({
       filename: "after-youth-program.html",
       template: path.resolve(__dirname, "./src/after-youth-program.html"),
-      excludeChunks: ["home_page_animation", "about_us_page_animation", "join_us_page_animation", "services_page_animation", "events_page_animation", "donate_page_animation", "modal"]
+      excludeChunks: ["home_page_animation", "about_us_page_animation", "join_us_page_animation", "services_page_animation", "events_page_animation", "donate_page_animation", "modal", "contact_page_animation"]
     }),
 
     // safe space and housing for lgbtq youth page
     new HtmlWebpackPlugin({
       filename: "safe-space-and-housing-for-lgbtq-youth.html",
       template: path.resolve(__dirname, "./src/safe-space-and-housing-for-lgbtq-youth.html"),
-      excludeChunks: ["home_page_animation", "about_us_page_animation", "join_us_page_animation", "services_page_animation", "events_page_animation", "donate_page_animation", "modal"]
+      excludeChunks: ["home_page_animation", "about_us_page_animation", "join_us_page_animation", "services_page_animation", "events_page_animation", "donate_page_animation", "modal", "contact_page_animation"]
     }),
 
     // event one page
     new HtmlWebpackPlugin({
       filename: "event-one.html",
       template: path.resolve(__dirname, "./src/event-one.html"),
+      excludeChunks: ["home_page_animation", "about_us_page_animation", "join_us_page_animation", "services_page_animation", "events_page_animation", "donate_page_animation", "modal", "contact_page_animation"]
+    }),
+
+    // contact page
+    new HtmlWebpackPlugin({
+      filename: "contact.html",
+      template: path.resolve(__dirname, "./src/contact.html"),
       excludeChunks: ["home_page_animation", "about_us_page_animation", "join_us_page_animation", "services_page_animation", "events_page_animation", "donate_page_animation", "modal"]
     })
   ],

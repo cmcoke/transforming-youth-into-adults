@@ -114,4 +114,8 @@
     margin-left: 24px;
   }
 
+  &--contact {
+    margin-top: 0;
+  }
+
 }
