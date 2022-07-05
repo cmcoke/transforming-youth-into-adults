@@ -27,6 +27,13 @@ class JoinUsPageAnimations {
       }
     });
 
+    this.fourthSectionEmploymentApplication = gsap.timeline({
+      scrollTrigger: {
+        trigger: "#join-us-page-fourth-section",
+        start: "top center"
+      }
+    });
+
     this.events();
   }
 
@@ -46,6 +53,10 @@ class JoinUsPageAnimations {
 
     // third section profile
     this.thirdSectionProfile.from("#join-us-page-third-section-profile", { opacity: 0, duration: 1 });
+
+    // fourth section profile
+    this.fourthSectionEmploymentApplication.from("#join-us-page-fourth-section", { opacity: 0, duration: 1 });
+
     // footer
     this.thirdSectionProfile.from("#join-us-page-footer", { opacity: 0 }, "<1");
   }

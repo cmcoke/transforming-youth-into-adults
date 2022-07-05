@@ -15,6 +15,7 @@ class RunAfterCompile {
     compiler.hooks.done.tap("Copy images", () => {
       fse.copySync("./src/assets/images", "./dist/assets/images");
       fse.copySync("./src/assets/fonts", "./dist/assets/fonts");
+      fse.copySync("./src/assets/files", "./dist/assets/files");
     });
   }
 }
